@@ -1,16 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import fileData from '../data/folderData'
 import './fileExplorer.css'
-const fileExplorer = () => {
+import Folder from './folder'
+const FileExplorer = () => {
+
+    const [data,setData] = useState(fileData);
+
   return (
     <div className='container'>
         
-        <div className='root-folder'>
-            {JSON.stringify(fileData)}
+
+        <div className='files-folders'>
+                <Folder explorer={data}/>
         </div>
 
     </div>
   )
 }
 
-export default fileExplorer
+export default FileExplorer
