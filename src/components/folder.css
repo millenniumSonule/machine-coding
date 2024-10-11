@@ -1,0 +1,32 @@
+/* Styling the overall folder container */
+.folder-container {
+    margin-left: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the folder's header */
+.folder-header {
+    cursor: pointer;
+    padding: 5px;
+    font-weight: bold;
+    color: #ff9900;
+    transition: color 0.3s;
+}
+
+/* Change color when hovering over the folder name */
+.folder-header:hover {
+    color: #e68a00;
+}
+
+/* Styling for the container of child folders/files */
+.folder-children {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+/* Style for individual files */
+.file {
+    padding: 5px;
+    font-style: italic;
+}
